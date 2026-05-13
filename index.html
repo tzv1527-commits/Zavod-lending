@@ -170,7 +170,7 @@
                 <li>структуры открытия контента.</li>
               </ul>
             </div>
-            <a class="btn btn-card" href="#">Открыть</a>
+            <button type="button" class="btn btn-card" data-open-modal="hook-engine">Открыть</button>
           </article>
 
           <article class="product-card" style="--i:1">
@@ -184,10 +184,11 @@
                 <li>генерация тем;</li>
                 <li>система рубрик;</li>
                 <li>контент-циклы;</li>
-                <li>AI-планирование.</li>
+                <li>AI-планирование;</li>
+                <li>та же логика — новые планы и серии без потолка.</li>
               </ul>
             </div>
-            <a class="btn btn-card" href="#">Открыть</a>
+            <button type="button" class="btn btn-card" data-open-modal="planner-os">Открыть</button>
           </article>
 
           <article class="product-card highlighted" style="--i:2">
@@ -196,15 +197,16 @@
                 <span class="product-label">Script Engine</span>
                 <strong class="price">2990₽</strong>
               </div>
-              <h3>50 AI-сценариев для коротких видео</h3>
+              <h3>50 AI-сценариев для Reels и Shorts</h3>
               <ul>
-                <li>структура роликов;</li>
-                <li>удержание внимания;</li>
-                <li>CTA;</li>
-                <li>сценарии под экспертный контент.</li>
+                <li>структуры под удержание;</li>
+                <li>типы: hook, story, opinion;</li>
+                <li>CTA без агрессии;</li>
+                <li>20 промптов под нишу;</li>
+                <li>те же каркасы — сколько угодно новых роликов.</li>
               </ul>
             </div>
-            <a class="btn btn-card" href="#">Открыть</a>
+            <button type="button" class="btn btn-card" data-open-modal="script-engine">Открыть</button>
           </article>
 
           <article class="product-card" style="--i:3">
@@ -213,15 +215,16 @@
                 <span class="product-label">Content Structures</span>
                 <strong class="price">2490₽</strong>
               </div>
-              <h3>Библиотека контент-структур</h3>
+              <h3>Библиотека структур для контента</h3>
               <ul>
-                <li>storytelling;</li>
-                <li>экспертные посты;</li>
-                <li>прогревы;</li>
-                <li>серии публикаций.</li>
+                <li>40+ каркасов под задачу;</li>
+                <li>storytelling, эксперт, Reels;</li>
+                <li>логика удержания и ритма;</li>
+                <li>20 промптов под нишу;</li>
+                <li>те же структуры — бесконечно новые посты и серии.</li>
               </ul>
             </div>
-            <a class="btn btn-card" href="#">Открыть</a>
+            <button type="button" class="btn btn-card" data-open-modal="content-structures">Открыть</button>
           </article>
 
           <article class="product-card product-wide product-flagship" id="system" style="--i:4">
@@ -373,6 +376,559 @@
     </div>
   </footer>
 
+  <div
+    class="hook-modal"
+    id="hook-engine-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="hook-modal-title"
+    hidden
+  >
+    <div class="hook-modal__backdrop" data-hook-modal-dismiss tabindex="-1" aria-hidden="true"></div>
+    <div class="product-modal__panel hook-modal__dialog">
+      <button type="button" id="hook-engine-modal-close" class="product-modal__close" aria-label="Закрыть">&times;</button>
+      <div class="product-modal__scroll">
+        <header class="product-modal__head">
+          <span class="eyebrow">Hook Engine</span>
+          <h2 id="hook-modal-title" class="product-modal__title">100 сильных хуков для постов и Reels</h2>
+          <p class="product-modal__lead">Не просто список заголовков.</p>
+          <p class="product-modal__year-note">Состав и промпты рассчитаны на работу с контентом в <strong>2026 году</strong> — актуальные форматы и логика внимания под Telegram, Reels и Shorts.</p>
+        </header>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p">Большинство подборок хуков в интернете выглядят:</p>
+          <ul class="product-modal__list">
+            <li>шаблонно;</li>
+            <li>кликбейтно;</li>
+            <li>одинаково для всех ниш.</li>
+          </ul>
+          <p class="product-modal__p product-modal__accent">Hook Engine собран иначе.</p>
+          <p class="product-modal__p">Это библиотека сильных начал для:</p>
+          <ul class="product-modal__list product-modal__list--check">
+            <li>Telegram</li>
+            <li>Reels</li>
+            <li>Shorts</li>
+            <li>экспертного контента</li>
+            <li>прогревов</li>
+            <li>личного бренда</li>
+          </ul>
+          <p class="product-modal__p">С акцентом не на манипуляцию, а на:</p>
+          <ul class="product-modal__list product-modal__list--check">
+            <li>удержание внимания;</li>
+            <li>естественный интерес;</li>
+            <li>живую подачу;</li>
+            <li>более человеческий стиль контента.</li>
+          </ul>
+        </section>
+
+        <hr class="product-modal__rule" />
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Что внутри</h3>
+          <h4 class="product-modal__h4">100 готовых хуков</h4>
+          <p class="product-modal__p">Разделены по типам:</p>
+
+          <div class="hook-types">
+            <div class="hook-type">
+              <h5 class="hook-type__label">Ошибка / разрушение мифа</h5>
+              <blockquote class="hook-type__quote">«Большинство людей делают контент слишком сложным.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Личный инсайт</h5>
+              <blockquote class="hook-type__quote">«Одна мысль полностью изменила мой контент.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Любопытство / интрига</h5>
+              <blockquote class="hook-type__quote">«Есть одна деталь, которую почти никто не замечает.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Жёсткая правда</h5>
+              <blockquote class="hook-type__quote">«Никто не обязан читать ваш контент.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Конкретика / цифры</h5>
+              <blockquote class="hook-type__quote">«3 вещи, которые делают пост сильнее.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Эмоция / узнавание</h5>
+              <blockquote class="hook-type__quote">«Если вам тяжело постоянно придумывать контент — вы не одни.»</blockquote>
+            </div>
+          </div>
+        </section>
+
+        <hr class="product-modal__rule" />
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Хуки разделены по психологии внимания</h3>
+          <p class="product-modal__p">Чтобы вы понимали:</p>
+          <ul class="product-modal__list product-modal__list--check">
+            <li>почему они работают;</li>
+            <li>когда использовать каждый тип;</li>
+            <li>какой эффект создаёт начало.</li>
+          </ul>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Мини-гайд внутри</h3>
+          <h4 class="product-modal__h4">Как писать сильные первые строки</h4>
+          <p class="product-modal__p">Без:</p>
+          <ul class="product-modal__list">
+            <li>дешёвого кликбейта;</li>
+            <li>искусственного пафоса;</li>
+            <li>ощущения «очередного AI-контента».</li>
+          </ul>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">AI-модуль</h3>
+          <h4 class="product-modal__h4">20 промптов для генерации новых хуков</h4>
+          <p class="product-modal__p">Чтобы:</p>
+          <ul class="product-modal__list product-modal__list--check">
+            <li>адаптировать их под свою нишу;</li>
+            <li>менять tone of voice;</li>
+            <li>генерировать вариации;</li>
+            <li>делать hooks менее «AI-шными».</li>
+          </ul>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Библиотека адаптаций</h3>
+          <p class="product-modal__p">Один и тот же хук:</p>
+          <ul class="product-modal__list product-modal__list--check">
+            <li>для Telegram;</li>
+            <li>для Reels;</li>
+            <li>для Threads;</li>
+            <li>для экспертного контента;</li>
+            <li>для продажи;</li>
+            <li>для storytelling.</li>
+          </ul>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Что это даёт</h3>
+          <div class="product-modal__compare">
+            <div class="product-modal__compare-col product-modal__compare-col--before">
+              <span class="product-modal__compare-tag">До</span>
+              <ul class="product-modal__list">
+                <li>«О чем начать?»</li>
+                <li>«Как зацепить?»</li>
+                <li>«Все звучит одинаково.»</li>
+              </ul>
+            </div>
+            <div class="product-modal__compare-col product-modal__compare-col--after">
+              <span class="product-modal__compare-tag">После</span>
+              <ul class="product-modal__list product-modal__list--check">
+                <li>есть структура начала;</li>
+                <li>проще запускать контент;</li>
+                <li>меньше сопротивления перед публикацией;</li>
+                <li>контент собирается быстрее.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Формат</h3>
+          <ul class="product-modal__list product-modal__list--check">
+            <li>PDF / Notion</li>
+            <li>быстрый доступ</li>
+            <li>удобно использовать ежедневно как библиотеку</li>
+          </ul>
+        </section>
+
+        <footer class="product-modal__foot">
+          <div class="product-modal__price-row">
+            <span class="product-modal__price-label">Цена</span>
+            <strong class="product-modal__price">590₽</strong>
+          </div>
+          <a class="btn btn-primary product-modal__buy" href="#">Купить</a>
+          <h3 class="product-modal__foot-title">Hook Engine</h3>
+          <p class="product-modal__foot-tag">Система сильных начал для контента</p>
+          <p class="product-modal__foot-lead">Чтобы перестать тратить энергию на первую строку.</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="hook-modal"
+    id="planner-os-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="planner-modal-title"
+    hidden
+  >
+    <div class="hook-modal__backdrop" data-hook-modal-dismiss tabindex="-1" aria-hidden="true"></div>
+    <div class="product-modal__panel hook-modal__dialog">
+      <button type="button" id="planner-os-modal-close" class="product-modal__close" aria-label="Закрыть">&times;</button>
+      <div class="product-modal__scroll">
+        <header class="product-modal__head">
+          <span class="eyebrow">Planner OS</span>
+          <h2 id="planner-modal-title" class="product-modal__title">Контент-план на 30 дней через ChatGPT</h2>
+          <p class="product-modal__lead">Система планирования, а не таблица тем на месяц.</p>
+          <p class="product-modal__year-note">Промпты и логика под <strong>2026</strong>: Telegram, Reels, Shorts, экспертный и creator-контент.</p>
+        </header>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p product-modal__accent">Фокус: регулярность, серии, меньше хаоса — без «идеального поста каждый день».</p>
+          <p class="product-modal__p"><strong>Внутри:</strong> контент-кластеры (одна тема → много материалов), контент-циклы, форматы (TG / Reels / storytelling / expert), AI-идеи через промпты, creator-style без «AI-шного» тона.</p>
+          <p class="product-modal__p"><strong>Недельный цикл</strong> (далее повтор): день 1 — ошибка/проблема; 2 — инсайт; 3 — практика; 4 — storytelling; 5 — мнение; 6 — кейс; 7 — снова цикл.</p>
+          <p class="product-modal__p">30 дней — ориентир, не потолок: кластеры и циклы можно снова прогонять с новым контекстом и нишей — <strong>сколько угодно раз</strong>, без лимита на объём идей и материалов.</p>
+        </section>
+
+        <hr class="product-modal__rule" />
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">20 промптов</h3>
+          <p class="product-modal__p">Темы, серии, ниша, углы — без шаблонных формулировок.</p>
+          <div class="hook-types">
+            <div class="hook-type">
+              <h5 class="hook-type__label">Кластеры</h5>
+              <blockquote class="hook-type__quote">«Помоги создать контент-кластеры для темы AI-контента.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Reels</h5>
+              <blockquote class="hook-type__quote">«Короткие идеи для Reels, creator-style.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Telegram</h5>
+              <blockquote class="hook-type__quote">«30 тем для канала без банальных советов.»</blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">До / после</h3>
+          <div class="product-modal__compare">
+            <div class="product-modal__compare-col product-modal__compare-col--before">
+              <span class="product-modal__compare-tag">До</span>
+              <ul class="product-modal__list">
+                <li>«О чём завтра?»</li>
+                <li>хаос и обрывки;</li>
+                <li>идеи кончаются.</li>
+              </ul>
+            </div>
+            <div class="product-modal__compare-col product-modal__compare-col--after">
+              <span class="product-modal__compare-tag">После</span>
+              <ul class="product-modal__list product-modal__list--check">
+                <li>поток тем и серий без потолка;</li>
+                <li>проще выходить в эфир;</li>
+                <li>живее подача.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p">Мини-гайд: меньше шаблона, больше creator-style, без «типичного ChatGPT». <strong>PDF / Notion</strong>.</p>
+        </section>
+
+        <footer class="product-modal__foot">
+          <div class="product-modal__price-row">
+            <span class="product-modal__price-label">Цена</span>
+            <strong class="product-modal__price">990₽</strong>
+          </div>
+          <a class="btn btn-primary product-modal__buy" href="#">Купить</a>
+          <h3 class="product-modal__foot-title">Planner OS</h3>
+          <p class="product-modal__foot-tag">Контент-план на 30 дней через ChatGPT</p>
+          <p class="product-modal__foot-lead">Чтобы перестать каждый день заново придумывать контент. Одна система — сколько угодно новых циклов, ниш и планов.</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="hook-modal"
+    id="script-engine-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="script-modal-title"
+    hidden
+  >
+    <div class="hook-modal__backdrop" data-hook-modal-dismiss tabindex="-1" aria-hidden="true"></div>
+    <div class="product-modal__panel hook-modal__dialog">
+      <button type="button" id="script-engine-modal-close" class="product-modal__close" aria-label="Закрыть">&times;</button>
+      <div class="product-modal__scroll">
+        <header class="product-modal__head">
+          <span class="eyebrow">Script Engine</span>
+          <h2 id="script-modal-title" class="product-modal__title">50 AI-сценариев для Reels и Shorts</h2>
+          <p class="product-modal__lead">Не набор идей — библиотека сценарных структур.</p>
+          <p class="product-modal__year-note">Логика роликов под <strong>2026</strong>: Reels, Shorts, TikTok, экспертный и creator-контент.</p>
+        </header>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p product-modal__accent">Без гонки за «вирусом любой ценой»: удержание первых секунд, динамика в середине, живой ToV, creator-style.</p>
+          <p class="product-modal__p">Типичные сценарии из сети — шаблон и «как у всех». Здесь — <strong>50 готовых каркасов</strong> под экспертные Reels, короткие видео, storytelling, opinion, прогревы и AI-контент. Одна структура — сколько угодно новых роликов с другим контекстом.</p>
+        </section>
+
+        <hr class="product-modal__rule" />
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Типы сценариев</h3>
+          <div class="hook-types">
+            <div class="hook-type">
+              <h5 class="hook-type__label">Hook → Insight</h5>
+              <blockquote class="hook-type__quote">Сильный заход → мысль</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Problem → Shift</h5>
+              <blockquote class="hook-type__quote">Проблема → новый взгляд</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Storytelling</h5>
+              <blockquote class="hook-type__quote">История → напряжение → вывод</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Observation</h5>
+              <blockquote class="hook-type__quote">Наблюдение → инсайт</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Fast Education</h5>
+              <blockquote class="hook-type__quote">Быстрая экспертная подача</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Opinion</h5>
+              <blockquote class="hook-type__quote">Позиция и мнение</blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Как выглядит каркас</h3>
+          <div class="hook-types">
+            <div class="hook-type">
+              <h5 class="hook-type__label">Hook → Insight</h5>
+              <blockquote class="hook-type__quote">«Большинство людей делают контент слишком сложным.» → объяснение → наблюдение → вывод</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Problem → Shift</h5>
+              <blockquote class="hook-type__quote">«Почему AI делает контент одинаковым.» → ошибка → причина → решение</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Storytelling</h5>
+              <blockquote class="hook-type__quote">«Я 40 минут пытался начать один пост.» → ситуация → эмоция → вывод</blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Внутри по таймингу</h3>
+          <p class="product-modal__p">Первые <strong>3 секунды</strong>, блоки удержания для середины, <strong>CTA</strong> без агрессивных продаж, creator-механики под современную подачу.</p>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">20 промптов</h3>
+          <p class="product-modal__p">Ниша, ToV, меньше шаблона, быстрее идеи — без «типичного AI-видео».</p>
+          <div class="hook-types">
+            <div class="hook-type">
+              <h5 class="hook-type__label">Reels</h5>
+              <blockquote class="hook-type__quote">«Короткий сценарий для экспертного Reels.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Живее</h5>
+              <blockquote class="hook-type__quote">«Сценарий менее AI-шным и более живым.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Story</h5>
+              <blockquote class="hook-type__quote">«Storytelling-сценарий для короткого видео.»</blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p"><strong>Кому:</strong> эксперты, блогеры, creator economy, авторы в Telegram, digital-продукты, агентства, AI-контент.</p>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">До / после</h3>
+          <div class="product-modal__compare">
+            <div class="product-modal__compare-col product-modal__compare-col--before">
+              <span class="product-modal__compare-tag">До</span>
+              <ul class="product-modal__list">
+                <li>«С чего начать видео?»</li>
+                <li>все Reels одинаковые;</li>
+                <li>внимание «течёт».</li>
+              </ul>
+            </div>
+            <div class="product-modal__compare-col product-modal__compare-col--after">
+              <span class="product-modal__compare-tag">После</span>
+              <ul class="product-modal__list product-modal__list--check">
+                <li>есть структура ролика;</li>
+                <li>быстрее к съёмке;</li>
+                <li>живее картинка и речь.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p">Мини-гайд: Reels без перегруза и дешёвого кликбейта, с более премиальной creator-подачей. <strong>PDF / Notion</strong>, как библиотека на каждый день.</p>
+        </section>
+
+        <footer class="product-modal__foot">
+          <div class="product-modal__price-row">
+            <span class="product-modal__price-label">Цена</span>
+            <strong class="product-modal__price">2990₽</strong>
+          </div>
+          <a class="btn btn-primary product-modal__buy" href="#">Купить</a>
+          <h3 class="product-modal__foot-title">Script Engine</h3>
+          <p class="product-modal__foot-tag">50 AI-сценариев для Reels и Shorts</p>
+          <p class="product-modal__foot-lead">Чтобы перестать каждый раз собирать видео с нуля.</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="hook-modal"
+    id="content-structures-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="content-structures-modal-title"
+    hidden
+  >
+    <div class="hook-modal__backdrop" data-hook-modal-dismiss tabindex="-1" aria-hidden="true"></div>
+    <div class="product-modal__panel hook-modal__dialog">
+      <button type="button" id="content-structures-modal-close" class="product-modal__close" aria-label="Закрыть">&times;</button>
+      <div class="product-modal__scroll">
+        <header class="product-modal__head">
+          <span class="eyebrow">Content Structures</span>
+          <h2 id="content-structures-modal-title" class="product-modal__title">Библиотека структур для контента</h2>
+          <p class="product-modal__lead">Не просто шаблоны постов — современные каркасы под задачу.</p>
+          <p class="product-modal__year-note">Структуры и промпты под <strong>2026</strong>: Telegram, Reels, экспертный текст, storytelling, прогревы, creator- и personal brand-контент.</p>
+        </header>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p product-modal__accent">Не «копировать формулу», а понятная подача, живой текст, удержание внимания, creator-style и естественный ToV.</p>
+          <p class="product-modal__p">Типичные схемы из сети — маркетингово, сухо, одинаково под все форматы. Здесь — <strong>40+ структур</strong> под экспертные посты, storytelling, Reels и короткие видео, opinion, прогревы и AI-контент. Один каркас — сколько угодно новых материалов и серий.</p>
+        </section>
+
+        <hr class="product-modal__rule" />
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">По задачам</h3>
+          <div class="hook-types">
+            <div class="hook-type">
+              <h5 class="hook-type__label">Storytelling</h5>
+              <blockquote class="hook-type__quote">История → напряжение → вывод</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Problem → Solution</h5>
+              <blockquote class="hook-type__quote">Проблема → решение → инсайт</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Observation</h5>
+              <blockquote class="hook-type__quote">Наблюдение → мысль → вывод</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Opinion</h5>
+              <blockquote class="hook-type__quote">Позиция → аргумент → усиление</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Educational</h5>
+              <blockquote class="hook-type__quote">Обучение короткими блоками</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Soft Selling</h5>
+              <blockquote class="hook-type__quote">Продажа без жёсткого давления</blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Примеры каркасов</h3>
+          <div class="hook-types">
+            <div class="hook-type">
+              <h5 class="hook-type__label">Storytelling</h5>
+              <blockquote class="hook-type__quote">Ситуация → напряжение → перелом → вывод</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Observation</h5>
+              <blockquote class="hook-type__quote">Наблюдение → почему так → новая мысль</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Expert</h5>
+              <blockquote class="hook-type__quote">Ошибка → объяснение → пример → решение</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Reels</h5>
+              <blockquote class="hook-type__quote">Hook → проблема → shift → вывод → CTA</blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Не только схема</h3>
+          <p class="product-modal__p">Логика удержания: почему дочитывают, где проседает интерес, как держать динамику и ритм абзацев и блоков.</p>
+        </section>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p"><strong>Creator-style:</strong> под короткое внимание, Telegram, Reels, creator economy и AI-assisted workflows.</p>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">20 промптов</h3>
+          <p class="product-modal__p">Новые форматы, ниша, меньше шаблона, быстрее сборка — без «типичного AI-текста».</p>
+          <div class="hook-types">
+            <div class="hook-type">
+              <h5 class="hook-type__label">Story</h5>
+              <blockquote class="hook-type__quote">«Storytelling-структура для экспертного контента.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Telegram</h5>
+              <blockquote class="hook-type__quote">«Структура для живого Telegram-поста.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Reels</h5>
+              <blockquote class="hook-type__quote">«Creator-style структура короткого видео.»</blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p"><strong>Кому:</strong> эксперты, блогеры, creators, агентства, авторы в Telegram, digital-продукты, AI-контент.</p>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">До / после</h3>
+          <div class="product-modal__compare">
+            <div class="product-modal__compare-col product-modal__compare-col--before">
+              <span class="product-modal__compare-tag">До</span>
+              <ul class="product-modal__list">
+                <li>«Как структурировать пост?»</li>
+                <li>хаос и сухой текст;</li>
+                <li>внимание не держится.</li>
+              </ul>
+            </div>
+            <div class="product-modal__compare-col product-modal__compare-col--after">
+              <span class="product-modal__compare-tag">После</span>
+              <ul class="product-modal__list product-modal__list--check">
+                <li>готовые каркасы;</li>
+                <li>живее и понятнее;</li>
+                <li>проще серии материалов.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-modal__section">
+          <p class="product-modal__p">Мини-гайд: живее, современнее, меньше AI-шности, без перегруза. <strong>PDF / Notion</strong>, как библиотека под рукой.</p>
+        </section>
+
+        <footer class="product-modal__foot">
+          <div class="product-modal__price-row">
+            <span class="product-modal__price-label">Цена</span>
+            <strong class="product-modal__price">2490₽</strong>
+          </div>
+          <a class="btn btn-primary product-modal__buy" href="#">Купить</a>
+          <h3 class="product-modal__foot-title">Content Structures</h3>
+          <p class="product-modal__foot-tag">Библиотека структур для современного контента</p>
+          <p class="product-modal__foot-lead">Чтобы перестать собирать каждый пост с нуля.</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
   <script>
     (function () {
       var mqReduce = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -517,12 +1073,88 @@
         );
       }
 
+      function initProductModals() {
+        var modals = [
+          { rootId: "hook-engine-modal", openKey: "hook-engine", closeId: "hook-engine-modal-close" },
+          { rootId: "planner-os-modal", openKey: "planner-os", closeId: "planner-os-modal-close" },
+          { rootId: "script-engine-modal", openKey: "script-engine", closeId: "script-engine-modal-close" },
+          { rootId: "content-structures-modal", openKey: "content-structures", closeId: "content-structures-modal-close" }
+        ];
+
+        function anyModalOpen() {
+          return modals.some(function (m) {
+            var r = document.getElementById(m.rootId);
+            return r && !r.hasAttribute("hidden");
+          });
+        }
+
+        function syncBodyAndScroll() {
+          var on = anyModalOpen();
+          document.body.classList.toggle("product-modal-open", on);
+          document.documentElement.style.overflow = on ? "hidden" : "";
+          document.body.style.overflow = on ? "hidden" : "";
+        }
+
+        function closeModal(root) {
+          if (!root) return;
+          root.setAttribute("hidden", "");
+          syncBodyAndScroll();
+        }
+
+        function openModal(root) {
+          if (!root) return;
+          root.removeAttribute("hidden");
+          syncBodyAndScroll();
+        }
+
+        modals.forEach(function (cfg) {
+          var root = document.getElementById(cfg.rootId);
+          var openBtn = document.querySelector('[data-open-modal="' + cfg.openKey + '"]');
+          var closeBtn = document.getElementById(cfg.closeId);
+          if (!root || !openBtn) return;
+
+          openBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            modals.forEach(function (m) {
+              var r = document.getElementById(m.rootId);
+              if (r && r !== root) r.setAttribute("hidden", "");
+            });
+            openModal(root);
+          });
+
+          root.querySelectorAll("[data-hook-modal-dismiss]").forEach(function (el) {
+            el.addEventListener("click", function (e) {
+              e.preventDefault();
+              closeModal(root);
+            });
+          });
+
+          if (closeBtn) {
+            closeBtn.addEventListener("click", function (e) {
+              e.preventDefault();
+              closeModal(root);
+            });
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key !== "Escape") return;
+          if (!anyModalOpen()) return;
+          modals.forEach(function (m) {
+            var r = document.getElementById(m.rootId);
+            if (r && !r.hasAttribute("hidden")) r.setAttribute("hidden", "");
+          });
+          syncBodyAndScroll();
+        });
+      }
+
       if (reduce) {
         all.forEach(function (el) {
           el.classList.add("is-visible");
         });
         initScrollProgress();
         initInPageAnchorClicks();
+        initProductModals();
         return;
       }
 
@@ -549,6 +1181,7 @@
       initHeroParallax();
       initMagnetic();
       initInPageAnchorClicks();
+      initProductModals();
     })();
   </script>
 </body>
