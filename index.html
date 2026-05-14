@@ -29,6 +29,20 @@
 
   <main id="top">
     <section class="hero section">
+      <div class="hero-backdrop" aria-hidden="true">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source src="hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-backdrop__scrim"></div>
+        <div class="hero-backdrop__vignette"></div>
+      </div>
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-content reveal" data-reveal>
@@ -46,33 +60,7 @@
           </div>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#products">Посмотреть продукты</a>
-            <a class="btn btn-secondary" href="#system">Собрать систему</a>
-          </div>
-        </div>
-
-        <div class="hero-card reveal reveal-delay" data-reveal aria-label="Визуализация контент-завода">
-          <div class="hero-card-parallax">
-            <div class="mini-window">
-              <div class="window-top">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="pipeline">
-                <div class="pipeline-item" style="--i:0">
-                  <small>INPUT</small>
-                  <strong>Идеи, опыт, заметки</strong>
-                </div>
-                <div class="arrow pipeline-arrow" style="--i:1">↓</div>
-                <div class="pipeline-item accent" style="--i:2">
-                  <small>AI-МОДУЛИ</small>
-                  <strong>Hooks · Planner · Scripts · OS</strong>
-                </div>
-                <div class="arrow pipeline-arrow" style="--i:3">↓</div>
-                <div class="pipeline-item" style="--i:4">
-                  <small>OUTPUT</small>
-                  <strong>Посты, Reels, серии контента</strong>
-                </div>
-              </div>
-            </div>
+            <a class="btn btn-secondary btn-hero-system" href="#system">Собрать систему</a>
           </div>
         </div>
       </div>
@@ -103,7 +91,7 @@
           <article class="system-step" style="--i:1">
             <span class="step-number">02</span>
             <h3>AI-модули</h3>
-            <p>Hook Engine, Planner OS, Script Engine и библиотека контент-структур.</p>
+            <p>Hook Engine, Planner OS, Faceless Content Engine и библиотека контент-структур.</p>
           </article>
           <article class="system-step" style="--i:2">
             <span class="step-number">03</span>
@@ -126,20 +114,20 @@
           <h2>Почему контент часто стопорится</h2>
           <p>Не из-за отсутствия мотивации. Чаще всего — потому что каждый раз всё начинается с нуля.</p>
         </div>
-        <div class="cards four">
-          <article class="card" style="--i:0">
+        <div class="cards four cards--pain">
+          <article class="card card--pain" style="--i:0">
             <h3>“Не знаю, о чем писать”</h3>
             <p>Темы быстро заканчиваются, а пустой экран только усиливает сопротивление.</p>
           </article>
-          <article class="card" style="--i:1">
+          <article class="card card--pain" style="--i:1">
             <h3>“ChatGPT пишет одинаково”</h3>
             <p>Текст получается слишком гладким, без живого голоса и личной подачи.</p>
           </article>
-          <article class="card" style="--i:2">
+          <article class="card card--pain" style="--i:2">
             <h3>“Уходит много времени”</h3>
             <p>Даже один пост может растянуться на часы, если нет структуры.</p>
           </article>
-          <article class="card" style="--i:3">
+          <article class="card card--pain" style="--i:3">
             <h3>“Нет системы”</h3>
             <p>Контент выходит рывками: то много, то снова тишина.</p>
           </article>
@@ -194,19 +182,19 @@
           <article class="product-card highlighted" style="--i:2">
             <div>
               <div class="product-top">
-                <span class="product-label">Script Engine</span>
+                <span class="product-label">Faceless Content Engine</span>
                 <strong class="price">2990₽</strong>
               </div>
-              <h3>50 AI-сценариев для Reels и Shorts</h3>
+              <h3>AI-система для создания контента без лица</h3>
               <ul>
-                <li>структуры под удержание;</li>
-                <li>типы: hook, story, opinion;</li>
-                <li>CTA без агрессии;</li>
-                <li>20 промптов под нишу;</li>
-                <li>те же каркасы — сколько угодно новых роликов.</li>
+                <li>AI video workflow;</li>
+                <li>сценарии, визуалы, озвучка, монтаж;</li>
+                <li>контент-пайплайн без камеры;</li>
+                <li>20 промптов под faceless;</li>
+                <li>одна система — бесконечный поток роликов.</li>
               </ul>
             </div>
-            <button type="button" class="btn btn-card" data-open-modal="script-engine">Открыть</button>
+            <button type="button" class="btn btn-card" data-open-modal="faceless-content-engine">Открыть</button>
           </article>
 
           <article class="product-card" style="--i:3">
@@ -242,7 +230,7 @@
                   сценарные механики и регулярный выпуск контента.
                 </p>
                 <ul class="product-flagship-perks" aria-label="Что входит">
-                  <li>Hook Engine, Planner, Script Engine и структуры</li>
+                  <li>Hook Engine, Planner, Faceless Content Engine и структуры</li>
                   <li>Один процесс вместо разрозненных промптов</li>
                   <li>Оптимально, если нужна система целиком</li>
                 </ul>
@@ -302,11 +290,35 @@
           <span class="eyebrow">Для кого</span>
           <h2>Подходит тем, кто делает контент регулярно</h2>
         </div>
-        <div class="cards four">
-          <article class="card compact" style="--i:0"><h3>Экспертам</h3><p>Чтобы выстроить более стабильный контент-процесс.</p></article>
-          <article class="card compact" style="--i:1"><h3>Блогерам</h3><p>Чтобы тратить меньше времени на продумывание идей.</p></article>
-          <article class="card compact" style="--i:2"><h3>Предпринимателям</h3><p>Чтобы создавать контент без полноценной редакции.</p></article>
-          <article class="card compact" style="--i:3"><h3>Агентствам</h3><p>Чтобы ускорять производство материалов.</p></article>
+        <div class="cards four cards--audience">
+          <article class="card card--audience compact" style="--i:0">
+            <span class="card-audience__sigil" aria-hidden="true">Э</span>
+            <div class="card-audience__copy">
+              <h3>Экспертам</h3>
+              <p>Чтобы выстроить более стабильный контент-процесс.</p>
+            </div>
+          </article>
+          <article class="card card--audience compact" style="--i:1">
+            <span class="card-audience__sigil" aria-hidden="true">Б</span>
+            <div class="card-audience__copy">
+              <h3>Блогерам</h3>
+              <p>Чтобы тратить меньше времени на продумывание идей.</p>
+            </div>
+          </article>
+          <article class="card card--audience compact" style="--i:2">
+            <span class="card-audience__sigil" aria-hidden="true">П</span>
+            <div class="card-audience__copy">
+              <h3>Предпринимателям</h3>
+              <p>Чтобы создавать контент без полноценной редакции.</p>
+            </div>
+          </article>
+          <article class="card card--audience compact" style="--i:3">
+            <span class="card-audience__sigil" aria-hidden="true">А</span>
+            <div class="card-audience__copy">
+              <h3>Агентствам</h3>
+              <p>Чтобы ускорять производство материалов.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -639,104 +651,122 @@
 
   <div
     class="hook-modal"
-    id="script-engine-modal"
+    id="faceless-content-engine-modal"
     role="dialog"
     aria-modal="true"
-    aria-labelledby="script-modal-title"
+    aria-labelledby="faceless-modal-title"
     hidden
   >
     <div class="hook-modal__backdrop" data-hook-modal-dismiss tabindex="-1" aria-hidden="true"></div>
     <div class="product-modal__panel hook-modal__dialog">
-      <button type="button" id="script-engine-modal-close" class="product-modal__close" aria-label="Закрыть">&times;</button>
+      <button type="button" id="faceless-content-engine-modal-close" class="product-modal__close" aria-label="Закрыть">&times;</button>
       <div class="product-modal__scroll">
         <header class="product-modal__head">
-          <span class="eyebrow">Script Engine</span>
-          <h2 id="script-modal-title" class="product-modal__title">50 AI-сценариев для Reels и Shorts</h2>
-          <p class="product-modal__lead">Не набор идей — библиотека сценарных структур.</p>
-          <p class="product-modal__year-note">Логика роликов под <strong>2026</strong>: Reels, Shorts, TikTok, экспертный и creator-контент.</p>
+          <span class="eyebrow">Faceless Content Engine</span>
+          <h2 id="faceless-modal-title" class="product-modal__title">AI-система для создания контента без лица</h2>
+          <p class="product-modal__lead">Не просто идеи для Reels — цельный faceless-пайплайн.</p>
+          <p class="product-modal__year-note">Workflow и промпты под <strong>2026</strong>: Reels, Shorts, TikTok, Telegram, digital-продукты, creator economy.</p>
         </header>
 
         <section class="product-modal__section">
-          <p class="product-modal__p product-modal__accent">Без гонки за «вирусом любой ценой»: удержание первых секунд, динамика в середине, живой ToV, creator-style.</p>
-          <p class="product-modal__p">Типичные сценарии из сети — шаблон и «как у всех». Здесь — <strong>50 готовых каркасов</strong> под экспертные Reels, короткие видео, storytelling, opinion, прогревы и AI-контент. Одна структура — сколько угодно новых роликов с другим контекстом.</p>
+          <p class="product-modal__p product-modal__accent">Не «стать блогером в кадре», а автоматизация, AI workflows, faceless-подход, скорость и современная creator-подача.</p>
+          <p class="product-modal__p">Типичные гайды — поверхностно, одинаково, завязаны на съёмку себя, без системы. Здесь — <strong>сборка роликов через нейросети</strong>: без камеры на себя, с понятным потоком от идеи до публикации.</p>
         </section>
 
         <hr class="product-modal__rule" />
 
         <section class="product-modal__section">
-          <h3 class="product-modal__h3">Типы сценариев</h3>
+          <h3 class="product-modal__h3">AI-модули</h3>
           <div class="hook-types">
             <div class="hook-type">
-              <h5 class="hook-type__label">Hook → Insight</h5>
-              <blockquote class="hook-type__quote">Сильный заход → мысль</blockquote>
+              <h5 class="hook-type__label">AI Video Workflow</h5>
+              <blockquote class="hook-type__quote">Сборка ролика через нейросети</blockquote>
             </div>
             <div class="hook-type">
-              <h5 class="hook-type__label">Problem → Shift</h5>
-              <blockquote class="hook-type__quote">Проблема → новый взгляд</blockquote>
+              <h5 class="hook-type__label">Faceless Scripts</h5>
+              <blockquote class="hook-type__quote">Сценарии без лица в кадре</blockquote>
             </div>
             <div class="hook-type">
-              <h5 class="hook-type__label">Storytelling</h5>
-              <blockquote class="hook-type__quote">История → напряжение → вывод</blockquote>
+              <h5 class="hook-type__label">AI Visual System</h5>
+              <blockquote class="hook-type__quote">Визуалы через AI</blockquote>
             </div>
             <div class="hook-type">
-              <h5 class="hook-type__label">Observation</h5>
-              <blockquote class="hook-type__quote">Наблюдение → инсайт</blockquote>
+              <h5 class="hook-type__label">Voice &amp; Narration</h5>
+              <blockquote class="hook-type__quote">Озвучка нейросетями</blockquote>
             </div>
             <div class="hook-type">
-              <h5 class="hook-type__label">Fast Education</h5>
-              <blockquote class="hook-type__quote">Быстрая экспертная подача</blockquote>
+              <h5 class="hook-type__label">AI Editing Flow</h5>
+              <blockquote class="hook-type__quote">Быстрый монтаж AI-инструментами</blockquote>
             </div>
             <div class="hook-type">
-              <h5 class="hook-type__label">Opinion</h5>
-              <blockquote class="hook-type__quote">Позиция и мнение</blockquote>
+              <h5 class="hook-type__label">Content Pipeline</h5>
+              <blockquote class="hook-type__quote">Регулярный поток контента</blockquote>
             </div>
           </div>
         </section>
 
         <section class="product-modal__section">
-          <h3 class="product-modal__h3">Как выглядит каркас</h3>
+          <h3 class="product-modal__h3">Форматы на выходе</h3>
+          <p class="product-modal__p">Faceless Reels и AI Shorts, ролики с AI-визуалами, narrated и cinematic AI-контент, Telegram-видео, материалы под digital-продукты и AI creator content.</p>
+        </section>
+
+        <section class="product-modal__section">
+          <h3 class="product-modal__h3">Готовые сценарные линии</h3>
           <div class="hook-types">
             <div class="hook-type">
-              <h5 class="hook-type__label">Hook → Insight</h5>
-              <blockquote class="hook-type__quote">«Большинство людей делают контент слишком сложным.» → объяснение → наблюдение → вывод</blockquote>
+              <h5 class="hook-type__label">Problem → Insight</h5>
+              <blockquote class="hook-type__quote">AI-ролик через проблему и решение</blockquote>
             </div>
             <div class="hook-type">
-              <h5 class="hook-type__label">Problem → Shift</h5>
-              <blockquote class="hook-type__quote">«Почему AI делает контент одинаковым.» → ошибка → причина → решение</blockquote>
+              <h5 class="hook-type__label">Observation-style</h5>
+              <blockquote class="hook-type__quote">Наблюдения и мысли</blockquote>
             </div>
             <div class="hook-type">
-              <h5 class="hook-type__label">Storytelling</h5>
-              <blockquote class="hook-type__quote">«Я 40 минут пытался начать один пост.» → ситуация → эмоция → вывод</blockquote>
+              <h5 class="hook-type__label">AI Storytelling</h5>
+              <blockquote class="hook-type__quote">История: AI-визуалы + narration</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Minimal Creator</h5>
+              <blockquote class="hook-type__quote">Минималистичная creator-подача</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Educational Shorts</h5>
+              <blockquote class="hook-type__quote">Обучающий faceless-контент</blockquote>
             </div>
           </div>
         </section>
 
         <section class="product-modal__section">
-          <h3 class="product-modal__h3">Внутри по таймингу</h3>
-          <p class="product-modal__p">Первые <strong>3 секунды</strong>, блоки удержания для середины, <strong>CTA</strong> без агрессивных продаж, creator-механики под современную подачу.</p>
+          <h3 class="product-modal__h3">Цепочка ролика</h3>
+          <p class="product-modal__p product-modal__accent">Идея → сценарий → AI-визуалы → AI-озвучка → монтаж → готовый ролик.</p>
+          <p class="product-modal__p"><strong>Плюс:</strong> AI Content Pipeline (регулярный выпуск), Faceless Creator System (без личных съёмок), AI Visual Direction (более премиальный вид), creator-style, чтобы выглядело актуально.</p>
         </section>
 
         <section class="product-modal__section">
           <h3 class="product-modal__h3">20 промптов</h3>
-          <p class="product-modal__p">Ниша, ToV, меньше шаблона, быстрее идеи — без «типичного AI-видео».</p>
+          <p class="product-modal__p">Сценарии, визуалы, скорость сборки, меньше шаблона, контент-поток.</p>
           <div class="hook-types">
             <div class="hook-type">
-              <h5 class="hook-type__label">Reels</h5>
-              <blockquote class="hook-type__quote">«Короткий сценарий для экспертного Reels.»</blockquote>
+              <h5 class="hook-type__label">Сценарий</h5>
+              <blockquote class="hook-type__quote">«Сценарий для AI-Reels без лица.»</blockquote>
             </div>
             <div class="hook-type">
-              <h5 class="hook-type__label">Живее</h5>
-              <blockquote class="hook-type__quote">«Сценарий менее AI-шным и более живым.»</blockquote>
+              <h5 class="hook-type__label">Визуалы</h5>
+              <blockquote class="hook-type__quote">«Cinematic AI visuals для creator-видео.»</blockquote>
             </div>
             <div class="hook-type">
-              <h5 class="hook-type__label">Story</h5>
-              <blockquote class="hook-type__quote">«Storytelling-сценарий для короткого видео.»</blockquote>
+              <h5 class="hook-type__label">Озвучка</h5>
+              <blockquote class="hook-type__quote">«Narration-style текст для короткого ролика.»</blockquote>
+            </div>
+            <div class="hook-type">
+              <h5 class="hook-type__label">Концепт</h5>
+              <blockquote class="hook-type__quote">«Creator-style faceless video concept.»</blockquote>
             </div>
           </div>
         </section>
 
         <section class="product-modal__section">
-          <p class="product-modal__p"><strong>Кому:</strong> эксперты, блогеры, creator economy, авторы в Telegram, digital-продукты, агентства, AI-контент.</p>
+          <p class="product-modal__p"><strong>Кому:</strong> эксперты, авторы в Telegram, creators, digital-продукты, AI-контент, агентства, faceless-страницы.</p>
         </section>
 
         <section class="product-modal__section">
@@ -745,24 +775,25 @@
             <div class="product-modal__compare-col product-modal__compare-col--before">
               <span class="product-modal__compare-tag">До</span>
               <ul class="product-modal__list">
-                <li>«С чего начать видео?»</li>
-                <li>все Reels одинаковые;</li>
-                <li>внимание «течёт».</li>
+                <li>«Нужно постоянно снимать себя»;</li>
+                <li>неясно, как собрать AI-видео;</li>
+                <li>всё выглядит шаблонно.</li>
               </ul>
             </div>
             <div class="product-modal__compare-col product-modal__compare-col--after">
               <span class="product-modal__compare-tag">После</span>
               <ul class="product-modal__list product-modal__list--check">
-                <li>есть структура ролика;</li>
-                <li>быстрее к съёмке;</li>
-                <li>живее картинка и речь.</li>
+                <li>есть AI-система ролика;</li>
+                <li>контент без лица в кадре;</li>
+                <li>быстрее и современнее;</li>
+                <li>стабильный контент-поток.</li>
               </ul>
             </div>
           </div>
         </section>
 
         <section class="product-modal__section">
-          <p class="product-modal__p">Мини-гайд: Reels без перегруза и дешёвого кликбейта, с более премиальной creator-подачей. <strong>PDF / Notion</strong>, как библиотека на каждый день.</p>
+          <p class="product-modal__p">Мини-гайд: без дешёвого AI-стиля и перегруженного монтажа — ближе к cinematic и premium creator-style. <strong>PDF / Notion</strong>, как AI-content operating system.</p>
         </section>
 
         <footer class="product-modal__foot">
@@ -771,9 +802,9 @@
             <strong class="product-modal__price">2990₽</strong>
           </div>
           <a class="btn btn-primary product-modal__buy" href="#">Купить</a>
-          <h3 class="product-modal__foot-title">Script Engine</h3>
-          <p class="product-modal__foot-tag">50 AI-сценариев для Reels и Shorts</p>
-          <p class="product-modal__foot-lead">Чтобы перестать каждый раз собирать видео с нуля.</p>
+          <h3 class="product-modal__foot-title">Faceless Content Engine</h3>
+          <p class="product-modal__foot-tag">AI-система для создания контента без лица</p>
+          <p class="product-modal__foot-lead">Чтобы делать современный контент через нейросети, а не бесконечные съёмки себя.</p>
         </footer>
       </div>
     </div>
@@ -950,28 +981,20 @@
         tick();
       }
 
-      function initHeroParallax() {
-        var card = document.querySelector(".hero-card");
-        var layer = document.querySelector(".hero-card-parallax");
-        if (!card || !layer) return;
-        var maxTilt = 7;
-        function onMove(e) {
-          var r = card.getBoundingClientRect();
-          var px = (e.clientX - r.left) / r.width - 0.5;
-          var py = (e.clientY - r.top) / r.height - 0.5;
-          layer.style.transform =
-            "perspective(1100px) rotateY(" +
-            (px * maxTilt * 2) +
-            "deg) rotateX(" +
-            (-py * maxTilt * 2) +
-            "deg)";
+      function initHeroVideo() {
+        var v = document.querySelector(".hero-video");
+        if (!v) return;
+        if (mqReduce.matches) {
+          v.pause();
+          v.removeAttribute("autoplay");
+          return;
         }
-        function onLeave() {
-          layer.style.transform = "perspective(1100px) rotateY(0deg) rotateX(0deg)";
-        }
-        card.addEventListener("mousemove", onMove);
-        card.addEventListener("mouseleave", onLeave);
+        v.muted = true;
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {});
       }
+
+      initHeroVideo();
 
       function initMagnetic() {
         var nodes = document.querySelectorAll(".btn, .header-cta");
@@ -1077,7 +1100,7 @@
         var modals = [
           { rootId: "hook-engine-modal", openKey: "hook-engine", closeId: "hook-engine-modal-close" },
           { rootId: "planner-os-modal", openKey: "planner-os", closeId: "planner-os-modal-close" },
-          { rootId: "script-engine-modal", openKey: "script-engine", closeId: "script-engine-modal-close" },
+          { rootId: "faceless-content-engine-modal", openKey: "faceless-content-engine", closeId: "faceless-content-engine-modal-close" },
           { rootId: "content-structures-modal", openKey: "content-structures", closeId: "content-structures-modal-close" }
         ];
 
@@ -1178,7 +1201,6 @@
       });
 
       initScrollProgress();
-      initHeroParallax();
       initMagnetic();
       initInPageAnchorClicks();
       initProductModals();
